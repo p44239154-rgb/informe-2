@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - Formularios</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #0f172a;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .card span {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: normal;
+            margin-top: 8px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mis Formularios de Pedidos</h1>
+
+    <div class="menu-container">
+        <a href="formulario.html" class="card">
+            Formulario de Pedidos
+            <span>click</span>
+        </a>
+
+        <a href="formulario2.html" class="card">
+            Registro del hotel
+            <span>click</span>
+        </a>
+
+        <a href="formulario3.html" class="card">
+            Seleccion de cursos
+            <span>click</span>
+        </a>
+
+        <a href="formulario4.html" class="card">
+            Inventario de comida
+            <span>click</span>
+        </a>
+    </div>
+
+</body>
+</html>
